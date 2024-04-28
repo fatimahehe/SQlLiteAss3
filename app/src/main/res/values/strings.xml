@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GUI Demo 6087</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">example@example.com</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Retype Password</string>
+    <string name="button_signup">SIGNUP</string>
+    <string name="button_exit">EXIT</string>
+    <string name="radio_button_male">Male</string>
+    <string name="radio_button_female">Female</string>
+    <string name="title">GUI Demo</string>
+    <string name="emailid">Email Id</string>
+
+
+</resources>

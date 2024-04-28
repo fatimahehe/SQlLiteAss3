@@ -1,0 +1,14 @@
+
+<resources>
+
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="padding_bottom_input">18dp</dimen>
+    <dimen name="padding_bottom">8dp</dimen>
+    <dimen name="padding_start_end">26dp</dimen>
+    <dimen name="padding_between_radio_buttons">16dp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="tv">6dp</dimen>
+
+
+</resources>
+

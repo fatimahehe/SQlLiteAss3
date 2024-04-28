@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:paddingStart="@dimen/padding_default"
+    android:paddingEnd="@dimen/padding_default"
+    android:padding="@dimen/padding_default">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <!-- First Name -->
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_first_name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_input"
+        android:inputType="text" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_last_name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_input"
+        android:inputType="text" />
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emailid"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/tv"
+        android:paddingTop="@dimen/padding_bottom_input"
+        android:visibility="visible" />
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/hint_email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_input"
+
+        android:inputType="textEmailAddress" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_input"
+        android:inputType="textPassword" />
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_confirm_password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_input"
+        android:inputType="textPassword" />
+
+    <!-- Gender Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/radio_button_male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/radio_button_female"
+            android:layout_marginStart="16dp"/>
+
+    </RadioGroup>
+
+    <!-- Sign Up and Exit Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_signup" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/button_exit" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="onLoginClick" />
+</LinearLayout>
